@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+.card{
+    margin: 10% auto;
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.mobile{
+    display: none;
+}
+img{
+    width: 250px;
+    height: 420px;
+}
+.body-text{
+    width: 250px;
+    height: auto;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+}
+.sub-title{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 3px;
+   
+}
+.title{
+    color: hsl(212, 21%, 14%);
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    margin: 15px 0;
+}
+.paragraph{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+.prices{
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+.current{
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+}
+.before{
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Fraunces', serif;
+    margin-left: 30px;
+    text-decoration: line-through;
+}
+.add-to-cart{
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.icon{
+    width: 14px;
+    height: auto;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 420px) {
+    .card{
+        width: 61%;
+        height: auto;
+        flex-direction: column;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    img{
+        height: auto;
+    }
+    .title{
+        font-size: 23px;
+    }
+    .paragraph{
+        font-size: 12px;
+    }
+    .current{
+        font-size: 28px;
+    }
+    .before{
+        font-size: 12px;
+    }
+}
